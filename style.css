@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Prata&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* transition: all .3s; */
+
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+.hero{
+    padding: 10px 20vh;
+    background: rgb(80,131,103);
+    background: -moz-radial-gradient(circle, rgba(80,131,103,1) 0%, rgba(40,66,52,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(80,131,103,1) 0%, rgba(40,66,52,1) 100%);
+    background: radial-gradient(circle, rgba(80,131,103,1) 0%, rgba(40,66,52,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#508367",endColorstr="#284234",GradientType=1);
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;   
+}
+/*********navbar*************/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+.nav .title {
+    font-size: 2.5rem;
+    color: #fff;
+}
+.nav .title .orange , .about-title .orange{
+    color: #EF7420;
+}
+.nav .nav-links .resp-nav {
+    display: flex;
+    gap: 3vh;
+}
+
+.nav .nav-links .nav-link{
+    text-decoration: none;
+    color: #fff;
+    font-size : 1.1rem;
+}
+#open-nav{
+    font-size: 1.9rem;
+    display: none;
+    color: #fff;
+}
+#close-nav{
+    font-size: 1.9rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #323232 ;
+    display: none;
+}
+/*********navbar*************/
+
+/*********hero content*************/
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hero-left{
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-left .hero-title{
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero-title span{
+    text-decoration: underline;
+}
+.hero-left .hero-sub-title{
+    color: #d7d7d7;
+    margin-bottom: 1rem;
+}
+ .btn{
+    background-color: #EF7420;
+    padding: 10px 20px;
+    border: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero-right img{
+    height: 35rem;
+}
+/*********hero content*************/
+/*********About us section*************/
+.container{
+    width: 100%;
+    height: 100%;
+    min-height  : 100vh;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(231,231,231,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(231,231,231,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(231,231,231,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e7e7e7",GradientType=1);
+    padding: 7vh 20vh;
+
+}
+.section-title{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-title hr{
+    width: 10rem;
+    align-self: center;
+    border: 2px solid #EF7420;
+    border-radius: 30px;
+
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    gap:  1rem;
+    margin-top: 7vh;
+}
+
+.about-img {
+    position: relative;
+    flex-basis: 50%;
+    max-height: 500px;
+  }
+.about-img img {
+    width: 100%;
+    height: auto;
+    height: 500px;
+    object-fit: cover;
+  }
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  }
+
+.about-text{
+    width: 45%;
+    max-height: 500px;
+    overflow: auto;
+}
+.about-title{
+    font-size: 2rem;
+    color: #323232;
+}
+.about-desc{
+    font-size: 1.1rem;
+    color: #A5A5A5;
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+/*********About us section*************/
+/*********Products section*************/
+
+.product{
+    background: rgb(80,131,103);
+    background: -moz-radial-gradient(circle, rgba(80,131,103,1) 0%, rgba(40,66,52,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(80,131,103,1) 0%, rgba(40,66,52,1) 100%);
+    background: radial-gradient(circle, rgba(80,131,103,1) 0%, rgba(40,66,52,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#508367",endColorstr="#284234",GradientType=1);
+}
+.white-title{
+    color: #fff;
+}
+
+.product-cards{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 7vh;
+    overflow: inherit;
+}
+.product-card{
+    width: 400px;
+    max-height: 600px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(223,223,223,1) 100%);
+    padding: 20px ;
+    border-radius: 20px;
+    color: #323232;
+    margin: 0 10px;
+}
+.product-card img{
+    width: 100%;
+    filter: drop-shadow(16px 16px 11px #747474)
+
+
+}
+.product-title{
+    font-size: 1.5rem;
+}
+.product-desc{
+    margin: 1rem 0;
+    text-align: justify;
+    color: #7D7D7D;
+}
+.product-bottom{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.product-price{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.product-price span{
+    font-size: 1.1rem;
+    color: #838383;
+    text-decoration: line-through;
+}
+
+/*********Products section*************/
+/*---------------------------Contact-----------------------------*/
+
+.mapouter {
+    flex: 1;
+  }
+  .mapouter iframe {
+    
+    height: 504px;
+    border: 1px solid #000;
+  }
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 7vh;
+  }
+  .contact-us {
+    flex: 1 ;
+  }
+  .contact-us input[type="email"],
+  input[type="text"],
+  input[type="tel"] {
+    margin-bottom: 40px;
+    width: 49%;
+    height: 25px;
+    padding: 15px 5px;
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+    border-bottom: 2px solid #a0a0a0;
+    font-size: 14px;
+    color: #434446;
+    transition: all .1s;
+  }
+  .contact-us input:focus{
+    border-bottom: 3px solid #a0a0a0;
+  }
+  .contact-content textarea {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 150px;
+    padding: 10px 5px;
+    border: 2px solid #a0a0a0;
+    background-color: transparent;
+    outline: 0;
+    resize: none;
+    font-size: 14px;
+    color: #434446;
+  }
+  .contact-us button {
+    cursor: pointer;
+  }
+  
+  .contact-us button:hover {
+    background-color: #ca6e30;
+  }
+  .contact-info {
+    margin-top: 2rem;
+    color: #1b7c40;
+  }
+  .contact-info i {
+    margin: 0 1rem 1rem 0;
+  }
+  .contact-info a {
+    text-decoration: none;
+    color: #1b7c40;
+    margin: 1rem 0 0 1rem;
+  }
+  
+  /*---------------------------End Contact-----------------------------*/
+
+
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 0;
+    background-color: #1b7c40;
+    color: #fff;
+  }
+   
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .hero{
+        padding: 51px  5rem;
+    }
+    .hero-content{
+        gap: 4rem;
+        justify-content: center;
+    }
+    .hero-left{
+        flex: 1;
+        max-width: 90%;
+    }
+    .hero-left .hero-title{
+        font-size: 2rem;
+    }
+    .hero-left .hero-sub-title{
+        font-size: .9rem;
+        
+    }
+
+    .container{
+        padding: 51px  5rem;
+    }
+    .hero-right img{
+        height: auto;   
+        width: 20rem;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .nav{
+        margin-bottom: 5rem;
+    }
+    
+    .resp-nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav .nav-links .nav-link{
+        color: #323232;
+        font-size: 2rem;
+    }
+    #open-nav {
+        display: block;
+    }
+    #close-nav{
+        display: block;
+    }
+      
+    .about-img{
+        flex-basis: 100%;
+    }
+    .about-img img {
+        height: 300px;
+      }
+    .gradient-overlay {
+        height: 300px;
+      }
+    .about-text{
+        flex-basis: 100%;
+    }
+
+
+  }
+  @media only screen and (max-width: 500px) {
+    .hero{
+        padding: 51px  2rem;
+    }
+
+    .hero-right img{
+        width: 15rem;
+    }
+    .container{
+        padding: 51px  2rem;
+
+    }
+}
